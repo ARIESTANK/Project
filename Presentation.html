@@ -27,17 +27,26 @@
         <ul>
             <li><a href="#homeSection">Home</a></li>
             <li><a href="#aboutSection">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Review</a></li>
-            <li><a href="#">Order</a></li>
+            <li><a href="#MenuSection">Menu</a></li>
+            <li><a href="#GallerySection">Gallery</a></li>
+            <li><a href="#ReviewSection">Review</a></li>
+            <li><a href="#OrderSection">Order</a></li>
         </ul>
-
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass" id="icon1"></i>
-            <i class="fa-solid fa-heart" id="icon1"></i>
-            <i class="fa-solid fa-cart-shopping" id="icon1"></i>
+        <div id="back">
+            <p4>MYAN</p4>  
+            <input type="checkbox" id="check" onpointerenter="f()" >
+           
+            <label for="check" class="buttonn"></label>
+           <p4>ENG</p4>
+                
         </div>
+        <div class="icons">
+            <a href="#MenuSection"> <i class="fa-solid fa-magnifying-glass" id="icon1" ></i></a>
+            <a href="#ReviewSection"><i class="fa-solid fa-heart" id="icon1"></i></a>
+            <a href="#OrderSection"><i class="fa-solid fa-cart-shopping" id="icon1"></i></a>
+        </div>
+        
+        
     </div>
     <div class="mid" id="homeSection">
         <div class="text">
@@ -50,7 +59,7 @@
                 quis alias?
             </p>
             <div class="box">
-                <button class="btn btnOrder">Order Now &nbsp;<i class="fa-solid fa-chevron-right"></i></button>
+                <a href="#OrderSection"><button class="btn btnOrder" id="Order">Order Now &nbsp;<i class="fa-solid fa-chevron-right"></i></button></a>
             </div>
         </div>
         <div class="image">
@@ -71,7 +80,7 @@
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                 into electronic typesetting, remaining essentially unchanged.
             </p>
-            <button class="btn btnOrder2">Order Now</button>
+            <a href="#OrderSection"> <button class="btn btnOrder2">Order Now</button></a>
         </div>
     </div>
     <!-- End About Section -->
@@ -79,7 +88,7 @@
     <div class="title">
         <h1>Our <span>Products</span></h1>
     </div>
-    <div class="Menu">
+    <div class="Menu" id="MenuSection">
 
         <div class="owl-carousel owl-theme product_list">
 
@@ -281,7 +290,7 @@
 
 
     </div>
-    <div class="titleG">
+    <div class="titleG" id="GallerySection">
         <h1>Our <span>Gallary</span></h1>
     </div>
     <div class="Imagelist">
@@ -294,7 +303,7 @@
             <img class="list" src="./img/gallery6.jpeg">
         </div>
     </div>
-    <div class="Review">
+    <div class="Review" id="ReviewSection">
         <div class="titleR">
             <h1>Customer <span>Review</span></h1>
         </div>
@@ -361,7 +370,7 @@
             </div>
         </div>
     </div>
-    <div class="Order">
+    <div class="Order" id="OrderSection">
         <div class="titleO">
             <h1><span>Order</span> Now</h1>
         </div>
@@ -479,7 +488,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./app.js"></script>
 </body>
 
 </html>
